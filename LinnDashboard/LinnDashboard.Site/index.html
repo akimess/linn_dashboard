@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Linn Dashboard</title>    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css" rel="stylesheet" />
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- slickgrid -->
+    <script src="/slickgrid/jquery.event.drag-2.2.js"></script>
+    <script src="/slickgrid/slick.core.js"></script>
+    <script src="/slickgrid/slick.grid.js"></script>
+    <link href="/slickgrid/slick.grid.css" rel="stylesheet" />
+
+    <!-- core -->
+    <script src="/core/dashboard.js"></script>
+
+    <script src="/core/diagrams/BaseDiagram.js"></script>
+    <script src="/core/diagrams/PieChart.js"></script>
+    <script src="/core/diagrams/BarChart.js"></script>
+    <script src="/core/diagrams/Grid.js"></script>
+    <script src="/core/diagrams/LineChart.js"></script>
+    <!--<script src="/core/diagrams/EmbeddedResource.js"></script>-->
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('visualization', '1.0', { 'packages': ['corechart', 'bar', 'table', 'line'] });
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.4.1/jsgrid.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.4.1/jsgrid-theme.min.css" />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsgrid/1.4.1/jsgrid.min.js"></script>
+
+
+
+    <link href="styles/global.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container" style="height: 100%; width: 100%;">
+
+    </div>
+    
+    <script type="text/javascript">
+        var $container = $("#container");
+        var opts = {
+            baseUrl: "http://localhost:9897",
+            switchTabTimeout: 10000
+        }        
+        
+        var dashboard = new Dashboard($container, opts);
+        dashboard.start();       
+    </script>
+</body>
+
+</html>

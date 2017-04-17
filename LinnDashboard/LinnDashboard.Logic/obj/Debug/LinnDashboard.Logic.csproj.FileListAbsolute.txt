@@ -1,0 +1,5 @@
+C:\Users\Akim\Documents\linn_dashboard\LinnDashboard\LinnDashboard.Logic\bin\Debug\LinnDashboard.Logic.dll
+C:\Users\Akim\Documents\linn_dashboard\LinnDashboard\LinnDashboard.Logic\bin\Debug\LinnDashboard.Logic.pdb
+C:\Users\Akim\Documents\linn_dashboard\LinnDashboard\LinnDashboard.Logic\obj\Debug\LinnDashboard.Logic.csprojResolveAssemblyReference.cache
+C:\Users\Akim\Documents\linn_dashboard\LinnDashboard\LinnDashboard.Logic\obj\Debug\LinnDashboard.Logic.dll
+C:\Users\Akim\Documents\linn_dashboard\LinnDashboard\LinnDashboard.Logic\obj\Debug\LinnDashboard.Logic.pdb

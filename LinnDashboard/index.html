@@ -1,0 +1,27 @@
+﻿<html>
+<body>
+<div style="margin-bottom: 10px; height: 20px;">
+    <input type="button" value="Exceptions" onclick="monitis.style.display='none';kibana.style.display='';" />
+    <input type="button" value="Servers" onclick="kibana.style.display='none';monitis.style.display='';" />
+</div>
+
+<div id="kibana" style="height: calc(100% - 35px); width: calc(100% - 10px);">
+	<iframe 
+		src="http://logstore.linnworks.net/app/kibana#/dashboard/Exceptions?embed&_a=(filters:!(),options:(darkTheme:!t),panels:!((col:1,columns:!(message,_type,database,module),id:Exceptions,row:4,size_x:12,size_y:5,sort:!('@timestamp',desc),type:search),(col:1,id:%5BLinechart%5D-Exceptions-count-per-type-and-per-time,row:1,size_x:6,size_y:3,type:visualization),(col:7,id:%5BVertical-Bar-Chart%5D-Exceptions-per-type-and-per-module,row:1,size_x:6,size_y:3,type:visualization)),query:(query_string:(analyze_wildcard:!t,query:'*')),title:Exceptions)&_g=(filters:!(),refreshInterval:(display:'10%20seconds',pause:!f,section:1,value:10000),time:(from:now-12h,mode:quick,to:now))"
+		height="100%" 
+		width="100%">
+	</iframe>
+</div>
+
+<div id="monitis" style="display:none">
+	<script type="text/javascript">
+	monitis_embed_module_id="3TISJ34ANLT8L72LD8NR3AMJ1I";
+	monitis_embed_module_width="1500";
+	monitis_embed_module_height="800";
+	monitis_embed_module_readonlyDateRange="true";
+	monitis_embed_module_detailedError="true";
+	</script>
+	<script type="text/javascript" src="http://dashboard.monitis.com/sharedModule/shareModule.js"></script>
+</div>
+</body>
+</html>
